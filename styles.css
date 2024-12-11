@@ -5,6 +5,9 @@ body {
     padding: 0;
     background-color: #fff;
     color: #17202a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe todo el alto de la ventana */
 }
 
 header {
@@ -28,7 +31,6 @@ nav {
 
 nav a {
     color: white;
-    ;
     text-decoration: none;
     font-weight: bold;
 }
@@ -41,6 +43,7 @@ nav a:hover {
     max-width: 1200px;
     margin: auto;
     padding: 2em;
+    flex: 1; /* Esto asegura que el contenido ocupe el espacio restante */
 }
 
 h2 {
@@ -62,11 +65,11 @@ h2 {
 }
 
 #gallery {
-
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
-    justify-content: center;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
 }
 
 .gallery-item {
@@ -92,34 +95,22 @@ h2 {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-    
-}
-#titulos {
     margin: 0; /* Elimina márgenes para un centrado más preciso */
     font-size: 2rem; /* Ajusta el tamaño del texto según lo necesites */
 }
-
-
-
 
 footer {
     background-color: #f2ffed;
     color: black;
     text-align: center;
-    padding: 1 px;
+    padding: 1px;
     width: 100%;
     position: fixed; /* Fija el footer */
     bottom: 0; /* Coloca el footer al fondo de la ventana */
     left: 0; /* Asegura que se extienda desde el borde izquierdo */
     height: 50px;
-    
-
 }
 
-
-
-
-/* Estilos adicionales con Flexbox */
 #viajes #intinerario {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -200,7 +191,6 @@ footer {
 #contact-form button:hover {
     background-color: #6c757d;
 }
-
 #intinerario {
     display: block;
     margin: 2rem 0;
@@ -257,11 +247,10 @@ img {
 }
 
 .maravilla {
-    background-color:  #e4f9dd;
-    ;
+    background-color: #e4f9dd;
     border: 1px solid #29850a;
     border-radius: 8px;
-    box-shadow: 0 4px 8px #29850a);
+    box-shadow: 0 4px 8px #29850a;
     padding: 1.5em;
     margin: 2em 0;
     text-align: center;
@@ -276,7 +265,6 @@ img {
     position: fixed; /* Fija el elemento en la ventana del navegador */
     right: 0%;     /* A 10px del borde derecho */
     bottom: 40px;    /* A 10px del borde inferior */
-
     text-align: center; /* Centra el contenido */
     z-index: 1000; /* Asegura que esté sobre otros elementos */
 }
@@ -288,7 +276,5 @@ img {
 }
 
 #whats p {
-    
     font-size: 10px; /* Ajusta el tamaño del texto */
 }
-
