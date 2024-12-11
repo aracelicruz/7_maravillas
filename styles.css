@@ -18,15 +18,17 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 nav {
     background-color: #29850a;
     color: black;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 1.5em;
     padding: 0.5em;
+    position: relative;
 }
 
 nav a {
@@ -36,7 +38,20 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #ff892f;
+    transition: 0.3s;
+}
+
+footer {
+    background-color: #f2ffed;
+    color: black;
+    text-align: center;
+    padding: 1px;
+    width: 100%;
+    position: relative;
+    bottom: 0; /* Coloca el footer al fondo de la ventana */
+    left: 0; /* Asegura que se extienda desde el borde izquierdo */
+    height: 50px;
 }
 
 .content {
@@ -99,17 +114,7 @@ h2 {
     font-size: 2rem; /* Ajusta el tamaño del texto según lo necesites */
 }
 
-footer {
-    background-color: #f2ffed;
-    color: black;
-    text-align: center;
-    padding: 1px;
-    width: 100%;
-    position: fixed; /* Fija el footer */
-    bottom: 0; /* Coloca el footer al fondo de la ventana */
-    left: 0; /* Asegura que se extienda desde el borde izquierdo */
-    height: 50px;
-}
+
 
 #viajes #intinerario {
     background-color: #fff;
