@@ -32,6 +32,22 @@ nav a:hover {
     margin: auto;
     padding: 2em;
 }
+
+h2{
+    color:black
+    
+}
+
+.nosotros{
+    background-color:#e9f7ef;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+    margin: 2em 0;
+    text-align: center;
+}
+
 #viajes #intinerario {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -132,3 +148,46 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Estilos específicos para el id "intinerario" */
+#intinerario {
+    display: block;
+    margin: 2rem 0;
+}
+
+#intinerario h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#intinerario p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Estilo para la tabla dentro de #intinerario */
+#intinerario table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+#intinerario table, #intinerario th, #intinerario td {
+    border: 1px solid #ccc;
+}
+
+#intinerario th, #intinerario td {
+    padding: 0.8rem;
+    text-align: left;
+}
+
+#intinerario th {
+    background-color: #f4f4f4;
+}
+
+/* Efecto hover para las filas de la tabla dentro de #intinerario */
+#intinerario tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
