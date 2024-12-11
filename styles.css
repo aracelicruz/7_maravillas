@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header {
+    background-color: #6c757d;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+nav {
+    background-color: #495057;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2em;
+}
+.maravilla {
+    margin-bottom: 2em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.maravilla img {
+    width: 100%;
+    height: auto;
+}
+.maravilla h2 {
+    margin: 0;
+    padding: 1em;
+    background: #343a40;
+    color: white;
+}
+.maravilla p {
+    padding: 1em;
+}
+footer {
+    background-color: #6c757d;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
