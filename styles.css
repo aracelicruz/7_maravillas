@@ -4,43 +4,50 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    color:#17202a;
+    color: #17202a;
 }
+
 header {
     background-color: #f5cba7;
     color: #2874a6;
     padding: 1em 0;
     text-align: center;
-}
-nav {
-    background-color: #2874a6;
-    color:#f5cba7;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: #2874a6;
+    color: #f5cba7;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
     padding: 0.5em;
 }
+
 nav a {
     color: #f5cba7;
     text-decoration: none;
-    margin: 0 1em;
     font-weight: bold;
 }
+
 nav a:hover {
     text-decoration: underline;
 }
+
 .content {
     max-width: 1200px;
     margin: auto;
     padding: 2em;
 }
 
-h2{
-    color:black
-    
+h2 {
+    color: black;
 }
 
-.nosotros{
-    background-color:#e9f7ef;
+.nosotros {
+    background-color: #e9f7ef;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -49,45 +56,90 @@ h2{
     text-align: center;
 }
 
+#about-us {
+    margin-bottom: 3em;
+}
+
+#gallery {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 1 30%;
+    max-width: 30%;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+#titulos {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    
+}
+#titulos {
+    margin: 0; /* Elimina márgenes para un centrado más preciso */
+    font-size: 2rem; /* Ajusta el tamaño del texto según lo necesites */
+}
+
+
+
+
+footer {
+    background-color: #f5cba7;
+    color: #2874a6;
+    text-align: center;
+    padding: 1 px;
+    width: 100%;
+    position: fixed; /* Fija el footer */
+    bottom: 0; /* Coloca el footer al fondo de la ventana */
+    left: 0; /* Asegura que se extienda desde el borde izquierdo */
+    height: 50px;
+    
+
+}
+
+
+
+
+/* Estilos adicionales con Flexbox */
 #viajes #intinerario {
-    background-color: #fff ;
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1.5em;
     margin: 2em 0;
 }
+
 #viajes #intinerario h2 {
     color: #343a40;
     text-align: center;
     margin-bottom: 1em;
 }
+
 #viajes #intinerario p {
     text-align: center;
     font-size: 1.1em;
     color: #555;
 }
-#viajes #intinerario table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1.5em;
-}
-#viajes #intinerario table th, #viajes #intinerario table td {
-    border: 1px solid #ddd;
-    padding: 0.8em;
-    text-align: center;
-}
-#viajes #intinerario table th {
-    background-color: #495057;
-    color: white;
-    font-weight: bold;
-}
-#viajes #intinerario table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-#viajes #intinerario table tr:hover {
-    background-color: #f1f1f1;
-}
+
 #contact-form {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -97,24 +149,29 @@ h2{
     max-width: 600px;
     margin: 2em auto;
 }
+
 #contact-form h2 {
     color: #343a40;
     text-align: center;
     margin-bottom: 1em;
 }
+
 #contact-form p {
     text-align: center;
     font-size: 1.1em;
     margin-bottom: 2em;
     color: #555;
 }
+
 #contact-form label {
     display: block;
     font-weight: bold;
     margin-bottom: 0.5em;
     color: #ff892f;
 }
-#contact-form input, #contact-form textarea {
+
+#contact-form input,
+#contact-form textarea {
     width: 100%;
     padding: 0.8em;
     margin-bottom: 1.5em;
@@ -124,6 +181,7 @@ h2{
     color: #333;
     box-sizing: border-box;
 }
+
 #contact-form button {
     display: block;
     width: 100%;
@@ -137,20 +195,11 @@ h2{
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 #contact-form button:hover {
     background-color: #6c757d;
 }
-footer {
-    background-color: #f5cba7;
-    color: #2874a6;
-    text-align: center;
-    padding: 1em 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
 
-/* Estilos específicos para el id "intinerario" */
 #intinerario {
     display: block;
     margin: 2rem 0;
@@ -166,18 +215,20 @@ footer {
     color: #666;
 }
 
-/* Estilo para la tabla dentro de #intinerario */
 #intinerario table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 2rem;
 }
 
-#intinerario table, #intinerario th, #intinerario td {
+#intinerario table,
+#intinerario th,
+#intinerario td {
     border: 1px solid #ccc;
 }
 
-#intinerario th, #intinerario td {
+#intinerario th,
+#intinerario td {
     padding: 0.8rem;
     text-align: left;
 }
@@ -186,43 +237,56 @@ footer {
     background-color: #f4f4f4;
 }
 
-/* Efecto hover para las filas de la tabla dentro de #intinerario */
 #intinerario tbody tr:hover {
     background-color: #f1f1f1;
     cursor: pointer;
 }
 
-/* Estilo para las imágenes dentro de las maravillas */
 img {
     box-sizing: border-box;
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    max-width: 100%; 
-    max-height: 100%; 
-    margin: 10px; 
-    padding: 10px; 
-    border: 5px solid #e9f7ef; 
-    display: block; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid #e9f7ef;
+    display: block;
 }
 
-.maravilla
-{
-
-    background-color:#85c1e9;
+.maravilla {
+    background-color: #85c1e9;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1.5em;
     margin: 2em 0;
     text-align: center;
-
 }
 
+.maravilla h2 {
+    font-size: 2rem !important;
+    color: #f5cba7 !important;
+}
 
-.maravilla
-h2 {
-    font-size: 2rem !important;  /* Tamaño de fuente más grande */
-    color: #f5cba7 !important;   /* Color naranja */
+#whats {
+    position: fixed; /* Fija el elemento en la ventana del navegador */
+    right: 0%;     /* A 10px del borde derecho */
+    bottom: 40px;    /* A 10px del borde inferior */
+
+    text-align: center; /* Centra el contenido */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+#whats img {
+    width: 50px;  /* Ajusta el tamaño del icono */
+    height: auto; /* Mantiene las proporciones */
+    border: 0;
+}
+
+#whats p {
     
+    font-size: 10px; /* Ajusta el tamaño del texto */
 }
+
