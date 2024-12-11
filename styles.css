@@ -8,8 +8,8 @@ body {
 }
 
 header {
-    background-color: #f5cba7;
-    color: #2874a6;
+    background-color: #f2ffed;
+    color: black;
     padding: 1em 0;
     text-align: center;
     display: flex;
@@ -18,8 +18,8 @@ header {
 }
 
 nav {
-    background-color: #2874a6;
-    color: #f5cba7;
+    background-color: #29850a;
+    color: black;
     display: flex;
     justify-content: center;
     gap: 1.5em;
@@ -27,7 +27,8 @@ nav {
 }
 
 nav a {
-    color: #f5cba7;
+    color: white;
+    ;
     text-decoration: none;
     font-weight: bold;
 }
@@ -102,8 +103,8 @@ h2 {
 
 
 footer {
-    background-color: #f5cba7;
-    color: #2874a6;
+    background-color: #f2ffed;
+    color: black;
     text-align: center;
     padding: 1 px;
     width: 100%;
@@ -234,11 +235,11 @@ footer {
 }
 
 #intinerario th {
-    background-color: #f4f4f4;
+    background-color: #e4f9dd;
 }
 
 #intinerario tbody tr:hover {
-    background-color: #f1f1f1;
+    background-color: #ffcaa2;
     cursor: pointer;
 }
 
@@ -251,15 +252,16 @@ img {
     max-height: 100%;
     margin: 10px;
     padding: 10px;
-    border: 5px solid #e9f7ef;
+    border: 5px solid #29850a;
     display: block;
 }
 
 .maravilla {
-    background-color: #85c1e9;
-    border: 1px solid #ddd;
+    background-color:  #e4f9dd;
+    ;
+    border: 1px solid #29850a;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px #29850a);
     padding: 1.5em;
     margin: 2em 0;
     text-align: center;
@@ -267,7 +269,7 @@ img {
 
 .maravilla h2 {
     font-size: 2rem !important;
-    color: #f5cba7 !important;
+    color: #ff892f !important;
 }
 
 #whats {
