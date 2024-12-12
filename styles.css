@@ -302,8 +302,8 @@ img {
     border: 0;
 }
 
-#whats p {
-    font-size: 10px; /* Ajusta el tamaño del texto */
+#whats a {
+    font-size: 9px; /* Ajusta el tamaño del texto */
 }
 
 @media (max-width: 1200px) { 
