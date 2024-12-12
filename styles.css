@@ -333,4 +333,7 @@ img {
  #titulos 
  { font-size: 1.5rem; 
 } 
-}
+#whats {
+position: relative;
+flex-direction: initial;
+
