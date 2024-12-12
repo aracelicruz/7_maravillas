@@ -65,11 +65,14 @@ footer {
 }
 
 .content {
-    max-width: 1200px;
-    
-    padding: 2em;
+    max-width: 1000px;
+    padding: 1em;
     flex: 1; /* Esto asegura que el contenido ocupe el espacio restante */
     margin: 7em auto;
+    height: 100 px;
+    justify-content: space-between; 
+    align-items: center; 
+    
 }
 
 h2 {
@@ -344,35 +347,81 @@ img {
     font-size: 9px; /* Ajusta el tamaño del texto */
 }
 
-@media (max-width: 1200px) { 
-    .content { 
-        padding: 2em;
-        margin: 7em auto;
-        }
-        .gallery-item { 
-            flex: 1 1 45%;
-             max-width: 45%;
-             } 
-            }
-            @media (max-width: 768px) { 
-                nav { 
-                    flex-direction: column;
-                    gap: 0;
-                 } 
-                 .gallery { 
-                    flex-direction: 
-                    column; } 
-                    .gallery-item { 
-                        flex: 1 1 100%; 
-                        max-width: 500%; }
- #contact-form 
- { padding: 1em; 
-}
- #titulos 
- { font-size: 1.5rem; 
-} 
-#whats {
-display: none;
 
-}
+
+/* Desktop: 1920px and larger */
+.content {
+    padding: 3em;
+    margin: 8em auto;
+  }
+  .gallery-item {
+    flex: 1 1 30%;
+    max-width: 30%;
+  }
+  
+  /* Laptop: 1366px - 1920px */
+  @media (max-width: 1366px) {
+    .content {
+      padding: 2.5em;
+      margin: 7em auto;
+    }
+    .gallery-item {
+      flex: 1 1 40%;
+      max-width: 40%;
+    }
+  }
+  
+  /* Tablet: 768px - 1366px */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      gap: 0.5em;
+    }
+    .gallery {
+      flex-direction: column;
+    }
+    .gallery-item {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+    #contact-form {
+      padding: 1.5em;
+    }
+    #titulos {
+      font-size: 1.25rem;
+    }
+    #whats {
+      display: none;
+    }
+  }
+  
+  /* Mobile medium: 375px - 768px */
+  @media (max-width: 375px) {
+    .content {
+      padding: 1.5em;
+      margin: 5em auto;
+    }
+    .gallery-item {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+    #titulos {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Mobile small: 360px - 375px */
+  @media (max-width: 360px) {
+    .content {
+      padding: 1em;
+      margin: 4em auto;
+    }
+    .gallery-item {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+    #titulos {
+      font-size: 1rem;
+    }
+  }
 
