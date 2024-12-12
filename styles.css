@@ -260,6 +260,41 @@ h2 {
     cursor: pointer;
 }
 
+.gallery-container {
+
+    margin: 2em 0;
+
+    display: grid;
+  
+    grid-template-columns: repeat(2, 1fr);
+  
+    gap: 15px;
+    
+    justify-content: space-between;
+  
+  }
+  
+  .gallery-item {
+    font-size: 16px;
+  
+    background-color: #e4f9dd;
+  
+    padding:0px;
+  
+    text-align: center;
+  
+    border-radius: 8px;
+
+  
+  }
+  
+
+.gallery-item p{
+    font-size: 5 px;
+    color: black
+} 
+
+
 img {
     box-sizing: border-box;
     width: 100%;
